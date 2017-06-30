@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<link href="css/main.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="js/angular.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/tether.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/controllers.js"></script>
+<body class="black-bg">
+
+
+<div class="app-wrap" ng-app="myApp" >
+<div ng-controller="myCtrl">
+
+    <div class="button-container text-center" ng-hide="state"><a  id="start-game" href="" class="btn btn-success btn-large" ng-click="playGame()">Start Game</a></div>
+	<div ng-show="state">
+        <h4>Round {{ round }}</h4>
+        <div class="row">
+    		<div class="col-md-6 tile-container " >
+    			<div ng-repeat="(key,val) in fields" class="tile-item">
+    				<a href="javascript:void(0)" ng-click="selectTile(key)" class="tile-{{val.color}}" ></a>
+    			</div>
+    		</div>
+
+            <div class="col-md-6" >
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Round</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+
+	
+
+</div>
+</div>
+
+</body>
+</html>

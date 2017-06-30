@@ -1,0 +1,126 @@
+html {
+	height:100%;
+	font-size: 150%;
+}
+body.black-bg {
+	height:100%;
+	background-color: #000;
+}
+.app-wrap {
+	max-width: 750px;
+	margin:0 auto;
+	h4 {
+		color: white;
+	}
+}
+	
+
+	.tile-container {
+		padding:1px;
+		margin-left:0 !important;
+		margin-right:0 !important;
+
+		.tile-item { 
+		   padding-left:0;
+		   padding-right:0;
+		   font-size: 1em;
+		   display: inline-block;
+		   margin-right:5%;
+		   	opacity:0.8;
+		   	float:left;
+
+			a {
+				border:5px solid #000;
+				padding:50px; 
+				display: block;
+				margin:1px;
+			}
+			a:active, a:visited, a:hover {
+				background:#222e3c;
+				color:#fff;
+			}
+
+		}
+
+		.tile-item a.tile-yellow {
+				background-color:yellow; 
+		}
+		.tile-item a.tile-red {
+				background-color:red; 
+		}
+		.tile-item a.tile-blue {
+				background-color:blue; 
+		}
+		.tile-item a.tile-green {
+				background-color:green; 
+		}
+
+		.tile-item.light a{
+			-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+		    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+		    animation-name: example;
+		    animation-duration: 0.5s;
+		}
+
+
+	}
+
+	.table {
+		thead {
+			background:orange;
+			color:#fff;
+		}
+		tbody {
+			background: #fff;
+		}
+	}
+
+		.btn-success, .btn-danger {
+			width: 50%;
+			text-align: center;
+			font-size:1.5em !important;
+			padding: 0.3em !important;
+		}
+
+	.button-container {
+		padding: 20px;
+
+	}
+
+
+@-webkit-keyframes example {
+    0% {box-shadow:none; opacity:0.8; border:5px solid #000;}
+    75% {box-shadow: inset 0px 0px 40px yellow; opacity:1; border:5px solid #fff;}
+    100% {box-shadow: none; opacity:0.8; border:5px solid #000;}
+}
+
+@keyframes example {
+    0% {box-shadow:none; opacity:0.8; border:5px solid #000;}
+    75% {box-shadow: inset 0px 0px 40px yellow; opacity:1; border:5px solid #fff;}
+    100% {box-shadow: none; opacity:0.8; border:5px solid #000;}
+}
+
+@media only screen and (min-height: 779px) {
+	.tile-container {
+		.tile-item { 
+			font-size: 2em;
+		}
+	}
+
+		.btn-success, .btn-danger {
+			font-size:2em !important;
+			padding: 0.4em !important;
+		}
+}
+@media only screen and (min-height: 1280px) {
+	.tile-container {
+		.tile-item { 
+			font-size: 4em;
+		}
+	}
+		.btn-success, .btn-danger {
+			padding: 0.5em !important;
+			font-size:2.5em !important;
+		}
+	
+}
